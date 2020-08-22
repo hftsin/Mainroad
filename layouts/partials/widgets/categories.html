@@ -7,10 +7,12 @@
 		{{- range $name, $taxonomy := $categories }}
 			{{- with $.Site.GetPage (printf "/categories/%s" $name) }}
 			<li class="widget__item">
-				<a class="widget__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-				{{- if .Site.Params.widgets.categories_counter }}&nbsp;
-				<span class="widget__counter widget__counter--bubble">{{ $taxonomy.Count }}</span>
-				{{ end -}}
+				<a class="widget__link" href="{{ .RelPermalink }}">
+					{{- .Title -}}
+					{{- if .Site.Params.widgets.categories_counter }}
+						({{ $taxonomy.Count }})
+					{{- end }}
+				</a>
 			</li>
 			{{- end }}
 		{{- end }}
