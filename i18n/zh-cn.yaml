@@ -61,10 +61,14 @@
 - id: tags_title
   translation: "标签"
 
+# Archive widget
+- id: archives_title
+  translation: "归档"
+
 # Footer
 - id: footer_credits
   translation: "基于 <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> 引擎和 \
-  <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> 主题"
+  <a href=\"https://github.com/hftsin/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>主題"
 
 # 404
 - id: 404_title
